@@ -1,47 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#BDBDBD">
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    tools:context="com.example.welcome.ttcounter.MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/nexus1"
+        android:scaleType="center">
+    </ImageView>
 
-    <TextView
-        android:id="@+id/quick_play"
-        style="@style/textStyle"
-        android:textAlignment="center"
-        android:background="#00C853"
-        android:text="Quick Game"
-        android:textAllCaps="true" />
-    <TextView
-        android:id="@+id/one_play"
-        style="@style/textStyle"
-        android:layout_marginTop="16sp"
-        android:textAlignment="center"
-        android:background="#00C853"
-        android:text="1 v 1" />
-    <TextView
-        android:id="@+id/tor_play"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        style="@style/textStyle"
-        android:textAlignment="center"
-        android:background="#00C853"
-        android:text="Tournament Mode" />
-    <TextView
-        android:id="@+id/load_play"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        style="@style/textStyle"
-        android:textAlignment="center"
-        android:background="#00C853"
-        android:text="Load" />
-</LinearLayout>
-</ScrollView>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            tools:context="com.example.welcome.ttcounter.MainActivity"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/rela">
+
+            <TextView
+                android:id="@+id/load_play"
+                style="@style/textStyle"
+                android:textAlignment="center"
+                android:layout_marginBottom="27dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_height="45sp" />
+
+            <TextView
+                android:id="@+id/tor_play"
+                style="@style/textStyle"
+                android:textAlignment="center"
+                android:layout_marginBottom="25dp"
+                android:layout_height="45sp"
+                android:layout_above="@+id/load_play"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/quick_play"
+                style="@style/textStyle"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:layout_marginBottom="31dp"
+                android:layout_height="55sp"
+                android:layout_above="@+id/one_play"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/one_play"
+                style="@style/textStyle"
+                android:textAlignment="center"
+                android:layout_marginBottom="36dp"
+                android:layout_height="45sp"
+                android:layout_above="@+id/tor_play"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+
+</RelativeLayout>

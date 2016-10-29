@@ -61,5 +61,24 @@ public class GameCounter extends AppCompatActivity {
         display1(scoreB);
     }
 
+    public void getdeductA(View view){
+        if(scoreA==0){
+            display(scoreA);
+        }
+        else{
+            scoreA--;
+            display(scoreA);
+        }
+    }
+
+    public void getdeductB(View view){
+        if (scoreB==0){
+            display1(scoreB);
+        }
+        else{
+            scoreB--;
+            display1(scoreB);
+        }
+    }
 
 }

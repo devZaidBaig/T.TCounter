@@ -2,7 +2,8 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="fill_parent"
-    android:layout_width="fill_parent">
+    android:layout_width="fill_parent"
+    android:background="#FFFFFF">
 <RelativeLayout
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -35,6 +36,16 @@
                 android:id="@+id/button_view"
                 style="@style/scoreButton"
                 android:onClick="getScoreA"/>
+            <Button
+                android:id="@+id/buttonD_view"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Deduct"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="#4CAF50"
+                android:textColor="#000000"
+                android:onClick="getdeductA"/>
         </LinearLayout>
 
         <LinearLayout
@@ -64,6 +75,16 @@
                 android:id="@+id/button1_view"
                 style="@style/scoreButton"
                 android:onClick="getScoreB"/>
+            <Button
+                android:id="@+id/buttonD1_view"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Deduct"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="#4CAF50"
+                android:textColor="#000000"
+                android:onClick="getdeductB"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -77,6 +98,7 @@
         android:background="#4CAF50"
         android:text="Reset"
         android:textSize="20sp"
+        android:textColor="#000000"
         android:onClick="onClickButton_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
