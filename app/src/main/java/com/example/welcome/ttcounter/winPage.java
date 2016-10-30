@@ -17,12 +17,17 @@ public class winPage extends AppCompatActivity {
         string = str.getString("key");
         TextView obj = (TextView) findViewById(R.id.win_view);
         obj.setText(string);
+
+        TextView t = (TextView)findViewById(R.id.res_button);
+        t.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent t = new Intent(winPage.this,MainActivity.class);
+                startActivity(t);
+            }
+        });
     }
 
-    public void onButtonClick(View view){
-        Intent i = new Intent(winPage.this,MainActivity.class);
-        startActivity(i);
-    }
 
     public void onBackPressed(){
         Intent intent = new Intent(this,MainActivity.class);
