@@ -25,6 +25,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(game);
             }
         });
+
+        TextView text = (TextView)findViewById(R.id.load_play);
+        text.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent obj = new Intent(MainActivity.this,load.class);
+                startActivity(obj);
+            }
+        } );
     }
 
     public void onBackPressed() {

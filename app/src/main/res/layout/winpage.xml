@@ -14,7 +14,7 @@
         android:id="@+id/win_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
+        android:textColor="#4CAF50"
         android:layout_marginTop="130dp"
         android:textAlignment="center"
         android:textStyle="italic"
